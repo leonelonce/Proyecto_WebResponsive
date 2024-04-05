@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="contactoEstilos.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@100&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagenes/logoPestaña.png">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="imagenes/logo1.png" alt="logo">
+        </a>
+        <nav>
+            <a href="index.html" class="nav-link">INICIO</a>
+            <a href="sobreMi.html" class="nav-link">SOBRE MI</a>
+            <a href="contacto.html" class="nav-link">CONTACTO</a>
+            <a href="pregFrecuentes.html" class="nav-link">?</a>
+        </nav>
+    </header>
+    <div class="contenedor">
+        <h1>Contacto</h1>
+        <p>Dejame tu mensaje y te voy a responder lo antes posible !</p>
+        <form action="correo.php" method="POST"> <!--haciendo referencia a creartxt.php-->
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required="">
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" name="email" id="email" required="">
+            
+            <label for="asunto">Asunto:</label>
+            <input type="text" name="asunto" id="asunto" required=""">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" required=""></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+        <footer class="pie-pagina">
+            <div class="nav-insta">
+                <a href="https://www.instagram.com/facundocardozotatuajes/"><img src="imagenes/logoInstagram.png"></a>
+            </div>
+            <div class="box">
+                    <img src="imagenes/logoUbicacion.png"><h3>Mar del Plata, Argentina | Zona Centro</h3>
+            </div>
+            <div class="box2">
+                <a href="index.html">Inicio</a>
+                <a href="sobreMi.html">Sobre mi</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="pregFrecuentes.html">Preguntas frecuentes</a>
+            </div>
+            <div class="box3">
+                <p>Facundo Cardozo Tatuajes</p>
+            </div>
+    </footer>
+</body>
+</html>

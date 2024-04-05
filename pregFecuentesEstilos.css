@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Chivo', sans-serif;
+    background-color: #545454;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: white;    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;/*UBICA LOS ELEMENTOS EN EL EJE PRINCIPAL - SPACE BETWEEN PARA QUE ESTEN SEPARADOS */
+    background-image: linear-gradient(black 95%,rgba(255, 255, 255,0));
+    align-items: center;
+    padding: 10px;
+    min-height: 70px;
+}
+
+.logo img{
+    height: 150px;
+    margin: 0;
+}
+
+
+.nav-links h1{
+    font-size: 59px;
+    color: white;
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+nav a{
+    font-weight: 1000;
+    padding-right: 40px;   
+}
+
+a:hover{
+    color:darkred;
+}
+
+.nav-links{
+    background-image: url(imagenes/fondos/fondoTribal.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-links ul{
+    padding: 50px;
+    list-style: none;
+    text-align: center;
+    font-size: 25px;
+}
+
+.nav-links ul li{
+    padding-bottom: 10px;
+    max-height: 250px;
+}
+
+.preguntas{
+    margin: 0 auto;
+    padding-top: 100px;
+    max-width: 100%;
+    text-align: center;
+    background-image: linear-gradient(0deg,black 98%,rgba(0,0,0,0));
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.preguntas h3{
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.preguntas p{
+    font-size:20px;
+    padding:50px 300px;
+}
+
+.preguntas hr{
+    height: 2px solid #545454;
+    width: 70%;
+    margin: auto;
+}
+
+.preguntas table{
+    border-collapse:collapse;
+    border: 1px solid white;
+    margin: auto;
+    width: 40%;
+}
+
+.preguntas table tr, td{
+    border: 1px solid white; 
+    text-align: center;
+    width: 25%;
+    padding: 5px;
+    height: 20px;   
+}
+
+
+
+.nav-insta{
+    display: flex;
+    background-color:black;
+    justify-content:space-around;
+}
+
+.nav-insta img{
+    width: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.pie-pagina .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.pie-pagina .box img{
+    width: 50px;
+    align-self: center;
+}
+
+.pie-pagina .box h1{
+    margin-right: 15px;
+    margin-left: 30px;
+}
+
+.pie-pagina .box2{
+    margin: 0 auto;
+    background-color: #545454;
+    padding: 50px;
+    color: black;
+    justify-content: space-between;
+    display: flex;
+    font-size: 30px;
+}
+
+.pie-pagina .box3{
+    background-color: black;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.pie-pagina .box3 p{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+@media(max-width: 768px)
+{
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav{
+        padding: 5px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav a{
+        padding-right: 15px; 
+    }
+
+    .preguntas
+    {
+        padding: 20px;
+    }
+
+    .preguntas h3
+    {
+        width: 70%;
+        margin: 0 auto;
+        font-size: 20px; /* Reducir el tamaño del texto */
+        margin-top: 10px; /* Espacio adicional en la parte superior */
+        margin-bottom: 10px; /* Espacio adicional en la parte inferior */
+    }
+    .preguntas p{
+        text-align: center;
+        font-size:20px;
+        padding:20px;
+    }
+    .preguntas img{
+        width: 60%;
+    }
+
+
+    .pie-pagina .box2{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .pie-pagina .box2 a{
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .pie-pagina .box3 {
+        padding: 5px;
+    }
+
+    .pie-pagina .box3 p {
+        font-size: 12px;
+    }    
+}

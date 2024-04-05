@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Chivo', sans-serif;
+    background-color: #545454;
+    background-image: url(imagenes/fondos/fondoTribal.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: white;    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;/*UBICA LOS ELEMENTOS EN EL EJE PRINCIPAL - SPACE BETWEEN PARA QUE ESTEN SEPARADOS */
+    background-image: linear-gradient(black 95%,rgba(255, 255, 255,0));
+    align-items: center;
+    padding: 10px;
+    min-height: 70px;
+}
+
+.logo img{
+    height: 150px;
+    margin: 0;
+}
+
+nav a{
+    font-weight: 1000;
+    padding-right: 40px;   
+}
+
+a:hover{
+    color:darkred;
+}
+
+
+h1{
+    font-size: 59px;
+    color: white;
+    font-weight: 600;
+    padding: 30px 0;
+    margin: auto;
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 70%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.contenedor .texto{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.contenedor .texto h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+.contenedor .texto p{
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+#img{
+    max-width: 320px;
+    float: right;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+.contenedor-2{
+    color: white;
+    display: flex;
+    margin: 20px auto;
+    width: 70%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-2 .texto{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.contenedor-2 .texto h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+.contenedor-2 .texto p{
+    margin-right: 20px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+#img2{
+    max-width: 320px;
+    float: left;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+
+
+.contenedor-3 {
+    color: white;
+    display: flex;
+    margin: 20px auto;
+    width: 70%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-3 .texto{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.contenedor-3 .texto h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+.contenedor-3 .texto p{
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+#img3{
+    max-width: 320px;
+    float: right;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.nav-insta{
+    display: flex;
+    background-color:black;
+    justify-content:space-around;
+}
+
+.nav-insta img{
+    width: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.pie-pagina .box{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.pie-pagina .box img{
+    width: 50px;
+    align-self: center;
+}
+
+
+.pie-pagina .box2{
+    margin: 0 auto;
+    background-color: #545454;
+    padding: 50px;
+    color: black;
+    justify-content: space-between;
+    display: flex;
+    font-size: 30px;
+}
+
+.pie-pagina .box3{
+    background-color: black;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.pie-pagina .box3 p{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 765px) {
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav{
+        padding: 5px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav a{
+        
+    padding-right: 15px; 
+    }
+
+   .contenedor-2{
+        display:grid;
+   }
+
+
+   .contenedor-3{
+    display: grid;
+   }
+
+   .pie-pagina .box h1 {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.pie-pagina .box2{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.pie-pagina .box2 a{
+    padding: 10px 0;
+    text-align: center;
+}
+
+.pie-pagina .box3 {
+    padding: 5px;
+}
+
+.pie-pagina .box3 p {
+    font-size: 12px;
+}    
+}
+
+
